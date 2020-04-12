@@ -3,6 +3,7 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:flutter/material.dart';
 import 'package:pokemon_data_app/pokemon_data.dart';
 import 'package:http/http.dart' as http;
+import 'package:pokemon_data_app/pokemon_details.dart';
 
 void main() => runApp(MaterialApp(
       title: 'Poke App',
@@ -29,7 +30,10 @@ class _HomePageState extends State<HomePage> {
   void fetchData() async {
     var request = await http.get(url);
     var decodeJson = jsonDecode(request.body);
-    pokeDesk = PokeDesk.fromJson(decodeJson);
+    setState(() {
+      pokeDesk = PokeDesk.fromJson(decodeJson);
+    });
+
     print(pokeDesk);
   }
 
@@ -53,7 +57,19 @@ class _HomePageState extends State<HomePage> {
             )
           : GridView.count(
               crossAxisCount: 2,
-              children: pokeDesk.pokemon.map((poke) => InkWell()),
+              children: pokeDesk.pokemon
+                  .map((poke) => InkWell(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => PokemonDetail()));
+                        },
+                        child: Text(
+                          'click mw',
+                        ),
+                      ))
+                  .toList(),
             ),
     );
   }

@@ -1,4 +1,4 @@
-# pokemon_data_app
+# Pokemon Go Poke Desk for pokemon details
 
 A new Flutter application.
 
