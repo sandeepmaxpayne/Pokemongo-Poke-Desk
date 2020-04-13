@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:flutter/material.dart';
 import 'package:pokemon_data_app/pokemon_data.dart';
@@ -59,18 +60,59 @@ class _HomePageState extends State<HomePage> {
               crossAxisCount: 2,
               children: pokeDesk.pokemon
                   .map((poke) => InkWell(
-                        onTap: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => PokemonDetail()));
-                        },
-                        child: Text(
-                          'click mw',
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => PokemonDetail(
+                                      pokemon: poke,
+                                    )));
+                      },
+                      child: Hero(
+                        tag: poke.img,
+                        child: Card(
+                          child: Column(
+//
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: <Widget>[
+                              Expanded(
+                                flex: 2,
+                                child: Container(
+//                                  height:
+//                                      MediaQuery.of(context).size.height * 0.4,
+//                                  width:
+//                                      MediaQuery.of(context).size.width * 0.2,
+                                  decoration: BoxDecoration(
+                                      image: DecorationImage(
+                                    fit: BoxFit.scaleDown,
+                                    image: NetworkImage(poke.img),
+                                  )),
+                                ),
+                              ),
+                              Expanded(
+                                child: Text(
+                                  poke.name,
+                                  style: TextStyle(
+                                      fontSize: 20.0,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
-                      ))
+                      )))
                   .toList(),
             ),
+      drawer: Drawer(
+        child: Text('drawer'),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          fetchData();
+        },
+        backgroundColor: Colors.grey.shade800,
+        child: Icon(Icons.refresh),
+      ),
     );
   }
 }
