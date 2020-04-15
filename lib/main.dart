@@ -41,13 +41,14 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xFFD7CCC8),
       appBar: AppBar(
         title: Text(
           'Poke App',
-          style: TextStyle(color: Colors.white38),
+          style: TextStyle(color: Colors.white),
         ),
         centerTitle: true,
-        backgroundColor: Colors.grey.shade800,
+        backgroundColor: Color(0xFF795548),
       ),
       body: pokeDesk == null
           ? Center(
@@ -58,6 +59,7 @@ class _HomePageState extends State<HomePage> {
             )
           : GridView.count(
               crossAxisCount: 2,
+              shrinkWrap: true,
               children: pokeDesk.pokemon
                   .map((poke) => InkWell(
                       onTap: () {
@@ -69,8 +71,16 @@ class _HomePageState extends State<HomePage> {
                                     )));
                       },
                       child: Hero(
+                        transitionOnUserGestures: true,
                         tag: poke.img,
                         child: Card(
+                          elevation: 5.1,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(20.0),
+                                bottomRight: Radius.circular(20.0)),
+                          ),
+                          color: Color(0xFFD7CCC8),
                           child: Column(
 //
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -103,9 +113,6 @@ class _HomePageState extends State<HomePage> {
                       )))
                   .toList(),
             ),
-      drawer: Drawer(
-        child: Text('drawer'),
-      ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           fetchData();

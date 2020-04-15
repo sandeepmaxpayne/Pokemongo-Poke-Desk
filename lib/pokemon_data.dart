@@ -21,11 +21,11 @@ class PokeDesk {
 class Pokemon {
   int id;
   String num;
-  String name;
-  String img;
-  List<String> type;
-  String height;
-  String weight;
+  String name; //done
+  String img; //done
+  List<String> type; //done
+  String height; //done
+  String weight; //done
   String candy;
   int candyCcount;
   String egg;
@@ -33,8 +33,8 @@ class Pokemon {
   String avgSpawn;
   String avgTime;
   List<double> multipliers;
-  List<String> weaknesses;
-  List<NextEvolution> nextEvolution;
+  List<String> weaknesses; //done
+  List<NextEvolution> nextEvolution; //done
 
   Pokemon(
       {this.id,
@@ -119,36 +119,3 @@ class NextEvolution {
     return data;
   }
 }
-
-//
-//"pokemon": [{
-//"id": 1,
-//"num": "001",
-//"name": "Bulbasaur",
-//"img": "http://www.serebii.net/pokemongo/pokemon/001.png",
-//"type": [
-//"Grass",
-//"Poison"
-//],
-//"height": "0.71 m",
-//"weight": "6.9 kg",
-//"candy": "Bulbasaur Candy",
-//"candy_count": 25,
-//"egg": "2 km",
-//"spawn_chance": 0.69,
-//"avg_spawns": 69,
-//"spawn_time": "20:00",
-//"multipliers": [1.58],
-//"weaknesses": [
-//"Fire",
-//"Ice",
-//"Flying",
-//"Psychic"
-//],
-//"next_evolution": [{
-//"num": "002",
-//"name": "Ivysaur"
-//}, {
-//"num": "003",
-//"name": "Venusaur"
-//
