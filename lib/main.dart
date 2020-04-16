@@ -2,13 +2,14 @@ import 'dart:convert';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:flutter/material.dart';
+import 'package:pokemon_data_app/logo_page.dart';
 import 'package:pokemon_data_app/pokemon_data.dart';
 import 'package:http/http.dart' as http;
 import 'package:pokemon_data_app/pokemon_details.dart';
 
 void main() => runApp(MaterialApp(
-      title: 'Poke App',
-      home: HomePage(),
+      color: Color(0xFF616161),
+      home: LogoScreen(),
     ));
 
 class HomePage extends StatefulWidget {
@@ -43,12 +44,13 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Color(0xFFD7CCC8),
       appBar: AppBar(
+        elevation: 6.0,
         title: Text(
-          'Poke App',
+          'Pokedex',
           style: TextStyle(color: Colors.white),
         ),
         centerTitle: true,
-        backgroundColor: Color(0xFF795548),
+        backgroundColor: Color(0xFF9E9E9E),
       ),
       body: pokeDesk == null
           ? Center(
@@ -117,7 +119,7 @@ class _HomePageState extends State<HomePage> {
         onPressed: () {
           fetchData();
         },
-        backgroundColor: Colors.grey.shade800,
+        backgroundColor: Color(0xFF9E9E9E),
         child: Icon(Icons.refresh),
       ),
     );

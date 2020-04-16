@@ -36,12 +36,12 @@ class _PokemonDetailState extends State<PokemonDetail>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF795548),
+      backgroundColor: Color(0xFF9E9E9E),
       appBar: AppBar(
         title: Text(widget.pokemon.name),
         centerTitle: true,
         elevation: 0.0,
-        backgroundColor: Color(0xFF795548),
+        backgroundColor: Color(0xFF9E9E9E),
       ),
       body: bodyWidget(context),
     );
@@ -77,7 +77,7 @@ class _PokemonDetailState extends State<PokemonDetail>
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(25.0),
                             side: BorderSide(
-                              color: Colors.black,
+                              color: Color(0xFF757575),
                             )),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -252,7 +252,8 @@ class _PokemonDetailState extends State<PokemonDetail>
                           ],
                         ),
                         shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(25.0)),
+                            borderRadius: BorderRadius.circular(25.0),
+                            side: BorderSide(color: Color(0xFF757575))),
                       ),
               ),
             ),
