@@ -44,4 +44,5 @@ In this app event we do not collect any registration information from children, 
 If you have additional questions regarding this privacy policy, please contact us at:
 
 Email: dutta15developer@gmail.com
+
 INDIA
