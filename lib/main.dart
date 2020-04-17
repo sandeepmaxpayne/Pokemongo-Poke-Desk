@@ -8,6 +8,7 @@ import 'package:http/http.dart' as http;
 import 'package:pokemon_data_app/pokemon_details.dart';
 
 void main() => runApp(MaterialApp(
+      debugShowCheckedModeBanner: false,
       color: Color(0xFF616161),
       home: LogoScreen(),
     ));

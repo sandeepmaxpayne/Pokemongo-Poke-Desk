@@ -83,7 +83,7 @@ class _PokemonDetailState extends State<PokemonDetail>
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: <Widget>[
                             SizedBox(
-                              height: 70.0,
+                              height: 40.0,
                             ),
                             Text(
                               widget.pokemon.name,
@@ -174,7 +174,7 @@ class _PokemonDetailState extends State<PokemonDetail>
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: <Widget>[
                             SizedBox(
-                              height: 45.0,
+                              height: 16.0,
                             ),
                             Text(
                               widget.pokemon.name,
@@ -268,9 +268,11 @@ class _PokemonDetailState extends State<PokemonDetail>
               height: 200.0,
               width: 200.0,
               decoration: BoxDecoration(
-                  image: DecorationImage(
-                      fit: BoxFit.cover,
-                      image: NetworkImage(widget.pokemon.img))),
+                image: DecorationImage(
+                    fit: BoxFit.scaleDown,
+                    image: NetworkImage(widget.pokemon.img),
+                    alignment: Alignment.topCenter),
+              ),
             ),
           ),
         )

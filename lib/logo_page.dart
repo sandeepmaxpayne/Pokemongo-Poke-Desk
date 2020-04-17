@@ -25,7 +25,3 @@ class _LogoScreenState extends State<LogoScreen> {
     );
   }
 }
-//FlareActor(
-//,
-//animation: "go",
-//),,
