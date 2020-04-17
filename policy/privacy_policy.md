@@ -3,21 +3,27 @@ TABLE OF CONTENTS:
 
 1. INTRODUCTION
 
-2. COLLECTION OF INFORMATION FROM CHILDREN
+2. CONTENT
 
-3. SECURITY
+3. COLLECTION OF INFORMATION FROM CHILDREN
 
-4. OTHER IMPORTANT INFORMATION
+4. SECURITY
 
-5. PARENTAL RIGHTS
+5. OTHER IMPORTANT INFORMATION
 
-6. CONTACT US
+6. PARENTAL RIGHTS
+
+7. CONTACT US
 
 1. INTRODUCTION
 
 The privacy of children is important to us
 
-2. COLLECTION OF INFORMATION FROM CHILDREN
+2. CONTENTS
+
+The contents of the app is appropriate to all age groups. The app do not include or depict any kind of violence, age discrimination, sexuality, religion, etc. This app do not contains any kind of ads . 
+
+3. COLLECTION OF INFORMATION FROM CHILDREN
 
 When a child accesses and interacts with the app Services, we may collect certain information automatically about those visits. The information we collect includes the type of computer operating system, IP address and/or mobile device identifier, web browser type, content viewed, the frequency with which the child visits various parts of our sites or applications, information regarding the online or mobile service provider, and cookie ID. We do not collect registration information from children on this site.
 
@@ -25,21 +31,23 @@ Cookies and other tracking technologies (such as pixels, beacons, and Adobe Flas
 
 Third parties that support the app Services by serving contextual advertisements or providing services, such as maintaining and analyzing the functioning of the App Services, assisting in network communications, stability of the App Services, hosting, content delivery, and authentication may also use these technologies to collect similar information; their collection and use of such information only is to support the internal operations of the App Services.
 
-3. SECURITY
+This app (including all APIs, SDKs, andads) complies with all applicable laws and regulations relating to children, such as the US Children's Online Privacy Protection Act COPPA, and the EU General Data Protection Regulation GDPR
+
+4. SECURITY
 
 The app uses commercially reasonable administrative, technical, personnel and physical measures to safeguard information in its possession against loss, theft and unauthorized use, disclosure or modification. Please be aware that, despite our best efforts, no security measures are perfect or impenetrable.
 
-4. OTHER IMPORTANT INFORMATION
+5. OTHER IMPORTANT INFORMATION
 
 Updates to Privacy Policy. From time to time, we may change this privacy policy to accommodate new technologies, industry practices, regulatory requirements or for other purposes. We will provide notice to you if these changes are material and, where required by applicable law, we will obtain your consent. Notice may be by email to you at the last email address you provided us, by posting notice of such changes on our sites and applications, or by other means, consistent with applicable law.
 
 Location of Data. This particular App Services are hosted in and managed from the INDIA.
 
-5. PARENTAL RIGHTS
+6. PARENTAL RIGHTS
 
 In this app event we do not collect any registration information from children, If by any mean this collects data then the parents with the ability to access the information collected from their children shall be notified immedaitely and on a strict order.
 
-6. CONTACT US
+7. CONTACT US
 
 If you have additional questions regarding this privacy policy, please contact us at:
 
